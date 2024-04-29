@@ -3,6 +3,7 @@
 int main(){
 	int b = 100;
 	int a =0 ;
-	printf("valor de a+b = %d\n",a+b);
+	in t c  =90;
+	printf("valor de a+b+c = %d\n",a+b+c);
 	return 0;
 }
