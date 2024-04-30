@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 int main(){
-	int b = 100;
-	int a =124 ;
-	printf("valor de a/b = %d\n",a/b);
+	int x = 100;
+	int y =124 ;
+	printf("valor de x dividido por y = %d\n",a/b);
+	// branch function no  linux casa
 	return 0;
 }
