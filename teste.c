@@ -1,4 +1,4 @@
-##include <stdio.h>
+#include <stdio.h>
 
 #define MAX_SIZE 100
 #define FAIL 0
@@ -35,6 +35,20 @@ unsigned char dequeue(unsigned char *data)
         return SUCCESS;
   }
 }
+
+unsigned char enqueue_adicionado_branch(unsigned char data) {
+    if ((end+1) % MAX_SIZE == start)
+    {
+        printf("Queue is full\n");
+        return FAIL;
+    }
+    else {
+        FIFO[end] = data;
+        end = (end + 1) % MAX_SIZE;
+        return SUCCESS;      
+    }
+}
+
 
 int main(void) {
   
