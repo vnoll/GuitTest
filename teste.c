@@ -49,6 +49,17 @@ unsigned char enqueue_adicionado_branch_new(unsigned char data) {
     }
 }
 
+unsigned char enqueue_adicionado_branch_nova_function(unsigned char data) {
+    if ((end+1) % MAX_SIZE == start)
+    {
+        return FAIL;
+    }
+    else {
+        return SUCCESS;      
+    }
+}
+
+
 
 int main(void) {
   
