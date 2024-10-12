@@ -37,7 +37,7 @@ unsigned char dequeue(unsigned char *data)
 }
 
 unsigned char enqueue_adicionado_branch_new(unsigned char data) {
-    if ((end+1) % MAX_SIZE == started)
+    if ((end+1) % MAX_SIZE == start)
     {
         printf("Queue is full\n");
         return FAIL;
